@@ -121,6 +121,9 @@ section{
     font-weight: 700;
     margin-bottom: 1rem;
 }
+.multiText {
+    color: var(--main-color);
+}
 .home-content h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
