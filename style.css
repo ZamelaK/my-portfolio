@@ -110,9 +110,6 @@ section{
 .home-content p {
     color: white; /* Set text color to white */
 }
-.home-content h1 span {
-    color: var(--main-color);
-}
 .home-content h3 span {
     color: white; /* Ensure the span inside h1 and h3 also has white text */
 }
