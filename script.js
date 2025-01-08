@@ -24,3 +24,15 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
+
+function sendMail(){
+    let parms = {
+        name : document.getElementByName("name").value,
+        email : document.getElementByName("email").value,
+        phone : document.getElementByName("phone").value,
+        subject : document.getElementByName("subject").value,
+        message : document.getElementByName("message").value
+    
+}
+    emailjs.send ("service_mnha1g9","template_knhivzj", parms).then(alert("Email Sent!!")
+}
