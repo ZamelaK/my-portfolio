@@ -27,12 +27,12 @@ menuIcon.onclick = () => {
 
 function sendMail(){
     let parms = {
-        name : document.getElementByName("name").value,
-        email : document.getElementByName("email").value,
-        phone : document.getElementByName("phone").value,
-        subject : document.getElementByName("subject").value,
-        message : document.getElementByName("message").value
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        phone : document.getElementById("phone").value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value,
     
-}
+    }
     emailjs.send ("service_mnha1g9","template_knhivzj", parms).then(alert("Email Sent!!")
 }
