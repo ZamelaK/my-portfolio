@@ -1,5 +1,5 @@
 // Initialize EmailJS
-emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS Public Key
+emailjs.init('oDQ40JHz-VCdjSG19'); // Replace with your EmailJS Public Key
 
 // Menu Toggle (Optional)
 let menuIcon = document.querySelector('#menu-icon');
