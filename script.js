@@ -25,7 +25,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-function sendMail(){
+window.onload = function sendMail(){
     let parms = {
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
@@ -34,5 +34,12 @@ function sendMail(){
         message : document.getElementById("message").value,
     
     }
-    emailjs.send ("service_11d19wi","template_uhmbhye", parms).then(alert("Email Sent!!")
-}
+    emailjs.send("service_11d19wi", "template_uhmbhye", parms)
+    .then((response) => {
+        alert("Email Sent!");
+    })
+    .catch((error) => {
+        alert("Failed to send email: " + error.text);
+    });
+};
+
